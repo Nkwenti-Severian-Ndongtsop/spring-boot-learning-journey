@@ -18,8 +18,8 @@ public class HelloTest {
 
     @Test
     void shouldReturnMessageFromComponent() throws Exception {
-        mockMvc.perform(get("/hello"))
+        mockMvc.perform(get("/result"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello from HelloComponent!"));
+                .andExpect(content().string("My First Spring-Boot Application!"));
     }
 }
