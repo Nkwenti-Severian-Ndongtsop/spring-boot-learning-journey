@@ -20,6 +20,6 @@ public class HelloTest {
     void shouldReturnMessageFromComponent() throws Exception {
         mockMvc.perform(get("/result"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("My First Spring-Boot Application!"));
+                .andExpect(content().string("Welcome to Spring Boot!"));
     }
 }
